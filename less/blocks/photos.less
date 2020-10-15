@@ -1,0 +1,165 @@
+.photos{
+	margin-top:26px;
+}
+
+
+.photos ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.photos ul li{
+	border-top:1px solid #e5e5e5;
+}
+
+.photos ul li div{
+margin:0 20px;
+margin-top:23px;
+}
+
+.photos ul li div h2{
+	font-family:PTSans;
+	font-weight:bold;
+	font-size:14px;
+	line-height:24px;
+	text-transform:uppercase;
+	margin:0;
+	margin-top:14px;
+}
+
+.photos ul li div p.photos__autor{
+	font-family:PTSans;
+	font-size:14px;
+	line-height:24px;
+	margin:0;
+	margin-top:4px;
+	color:3333333;
+	
+}
+
+.photos ul li div p.photos__like{
+	font-family:PTSans;
+	font-weight:bold;
+	font-size:14px;
+	line-height:24px;
+	text-transform:uppercase;
+	margin:0;
+	margin-top:10px;
+	margin-left:36px;
+	margin-bottom:18px;
+	position:relative;
+}
+
+.photos ul li div p.photos__like::before{
+content:"";
+width:23px;
+height:21px;
+background-image:url("../img/like-icon.png");
+position:absolute;
+top:2px;
+left:-36px;
+
+	
+}
+
+
+@media(min-width:@tablet-width){
+
+.photos{
+	margin:0 60px;
+}
+
+.photos ul li div{
+margin:0 0px;
+background-color:#f2f2f2;
+}
+
+.photos ul {
+	display:flex;
+	flex-wrap:wrap;
+}
+.photos ul li{
+	width:50%;
+	border:none;
+}
+
+.photos ul li:first-child{
+	width:100%;
+}
+.photos ul li:nth-chidl(3){
+	background-color:#eaeaea;
+}
+
+.photos ul li div h2{
+	margin:0;
+	margin-left:20px;
+	padding-top:12px;
+
+}
+
+.photos ul li div p.photos__autor{
+	margin-left:20px;
+	padding-bottom:16px;
+}
+
+.photos ul li div{
+	position:relative;
+}
+
+.photos ul li div p.photos__like{
+	position:absolute;
+	right:30px;
+	bottom:13px;
+}
+}
+
+@media(min-width:@desktop-width){
+	
+.photos{
+	margin:0 0px;
+}
+
+.photos ul li{
+	width:33.3%;
+	border:none;
+}
+.photos ul li div{
+background-color:rgba(0,0,0,0.3);
+color:white;
+}
+
+.photos ul li div.photos__li-wrapper{
+	position:absolute;
+	width:100%;
+	bottom:4px;
+}
+
+.photos ul li div p.photos__like::before{
+background-image:url("../img/like-icon-white.png");
+}
+
+.photos ul li:not(:first-child){
+	position:relative;
+	top:-4px;
+}
+
+
+.photos ul li:not(:first-child)::after{
+	content:"";
+	width:100%;
+	height:4px;
+	position:absolute;
+	background-color:white;
+	bottom:0;
+	left:0;
+}
+
+.video h2,
+.video p,
+.video picture{
+	margin:0 auto;
+}
+
+}
+

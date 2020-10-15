@@ -1,0 +1,155 @@
+.main-nav{
+	position:relative;
+	z-index:2;
+}
+
+
+.main-nav ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+
+.main-nav ul li:not(:last-child) a{
+	font-family:PTSans;
+	font-weight:bold;
+	font-size:18px;
+	line-height:40px;
+	color:white;
+	text-transform:uppercase;
+	background-color:#81b3d2;
+	text-decoration:none;
+	margin:0;
+	text-align:center;
+	display:inline-block;
+	width:100%;
+	padding:7px 20px;
+	box-sizing:border-box;
+	border-bottom:1px solid #678fa8;
+}
+
+.current{
+	
+}
+
+.main-nav ul li:not(:last-child) a:hover{
+	color:#81b3d2;
+}
+
+.main-nav ul li:not(:last-child) a:active{
+	color:rgba(0,0,0,0.3);
+}
+
+.current{
+	color:#766357 !important;
+}
+.current:hover{
+	color:#604e43 !important;
+}
+
+.current:active{
+	color:rgba(118,99,87,0.3) !important;
+}
+
+
+.main-nav ul li:not(:first-child):not(:last-child) a{
+	border-top:1px solid #9ac2db;
+}
+
+.main-nav ul li:last-child a span{
+	text-align:center;
+	display:inline-block;
+	width:100%;
+	box-sizing:border-box;
+}
+
+.main-nav--open{
+background-image:url("../img/icon-open.png");
+width:23px;
+height:21px;
+display:inline-block;
+margin:auto 0;
+margin-left:auto;
+z-index:4;	
+}
+
+.main-nav ul li:first-child{
+	position:relative;
+}
+
+.main-nav ul li a.main-nav--close{
+	box-sizing:unset;
+	border-bottom:none;
+	background-color:unset;
+	line-height:unset;
+	text-align:unset;
+	position:absolute;
+	right:20px;
+	top:16px;
+	display:block;
+	width:23px;
+	height:22px;
+	padding:0;
+	background-image:url("../img/icon-close.png");
+	z-index:4;	
+}
+
+.hidden{
+	display:none !important;
+}
+
+
+
+@media(min-width:@tablet-width){
+.main-nav--open,
+.main-nav--close{
+	display:none !important;
+}
+.main-nav ul li{
+	display:list-item !important;
+}
+
+.main-nav ul{
+	display:flex;
+	justify-content:space-between;
+	margin-left:40px;
+	margin-right:40px;
+
+}
+
+.main-nav ul li:not(:last-child) a{
+	color:black;
+	border:none !important;
+	font-size:14px;
+	line-height:26px;
+	padding:15px 0;
+	background-color:unset;
+}
+
+.main-nav ul li:nth-child(1){
+	order:1;
+}
+.main-nav ul li:nth-child(2){
+	order:2;
+}
+.main-nav ul li:nth-child(3){
+	order:4;
+}
+.main-nav ul li:nth-child(4){
+	order:5;
+}
+.main-nav ul li:nth-child(5){
+	order:3;
+}
+
+	
+}
+
+@media(min-width:@desktop-width){
+	.main-nav ul{
+	margin-left:88px;
+	margin-right:88px;
+}
+
+}
